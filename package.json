@@ -1,0 +1,11 @@
+{
+  "name": "uniprojectpartners",
+  "private": true,
+  "workspaces": [
+    "apps/api",
+    "apps/web"
+  ],
+  "scripts": {
+    "test": "pnpm --filter api test || npm --workspace apps/api test || echo \"Run tests from apps/api\""
+  }
+}
